@@ -1,0 +1,217 @@
+[gd_scene load_steps=23 format=2]
+
+[ext_resource path="res://Scenes/Planet.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Spaceship.tscn" type="PackedScene" id=2]
+
+[sub_resource type="VisualScriptFunction" id=2]
+resource_name = "_ready"
+
+[sub_resource type="VisualScriptWhile" id=5]
+_default_input_values = [ true ]
+
+[sub_resource type="VisualScriptPreload" id=13]
+resource = ExtResource( 1 )
+
+[sub_resource type="VisualScriptFunctionCall" id=14]
+_default_input_values = [ null, 0 ]
+call_mode = 2
+base_type = "PackedScene"
+base_script = ""
+argument_cache = {
+"args": [ {
+"class_name": "PackedScene.GenEditState",
+"hint": 0,
+"hint_string": "",
+"name": "edit_state",
+"type": 2,
+"usage": 262151
+} ],
+"default_args": [  ],
+"flags": 9,
+"id": 0,
+"name": "",
+"return": {
+"class_name": "Node",
+"hint": 0,
+"hint_string": "",
+"name": "",
+"type": 17,
+"usage": 7
+}
+}
+function = "instance"
+use_default_args = 0
+
+[sub_resource type="VisualScriptVariableGet" id=16]
+var_name = "CurrentNumPlanets"
+
+[sub_resource type="VisualScriptVariableGet" id=17]
+var_name = "NumberOfPlanets"
+
+[sub_resource type="VisualScriptOperator" id=18]
+_default_input_values = [ 0, 0 ]
+operator = 2
+type = 2
+
+[sub_resource type="VisualScriptVariableSet" id=19]
+_default_input_values = [ 0 ]
+var_name = "CurrentNumPlanets"
+
+[sub_resource type="VisualScriptVariableGet" id=20]
+var_name = "CurrentNumPlanets"
+
+[sub_resource type="VisualScriptOperator" id=21]
+_default_input_values = [ 0, 1 ]
+type = 2
+
+[sub_resource type="VisualScriptTypeCast" id=22]
+_default_input_values = [ null ]
+base_type = "StaticBody2D"
+
+[sub_resource type="VisualScriptPropertySet" id=23]
+_default_input_values = [ null, 0.0 ]
+set_mode = 2
+base_type = "StaticBody2D"
+base_script = ""
+type_cache = {
+"class_name": "",
+"hint": 0,
+"hint_string": "",
+"name": "position",
+"type": 5,
+"usage": 7
+}
+property = "position"
+index = "x"
+
+[sub_resource type="VisualScriptBuiltinFunc" id=24]
+_default_input_values = [  ]
+function = 31
+
+[sub_resource type="VisualScriptPropertySet" id=25]
+_default_input_values = [ null, 0.0 ]
+set_mode = 2
+base_type = "StaticBody2D"
+base_script = ""
+type_cache = {
+"class_name": "",
+"hint": 0,
+"hint_string": "",
+"name": "position",
+"type": 5,
+"usage": 7
+}
+property = "position"
+index = "y"
+
+[sub_resource type="VisualScriptBuiltinFunc" id=26]
+_default_input_values = [ -10000.0, 10000.0 ]
+function = 34
+
+[sub_resource type="VisualScriptBuiltinFunc" id=27]
+_default_input_values = [ -10000.0, 10000.0 ]
+function = 34
+
+[sub_resource type="VisualScriptFunctionCall" id=28]
+_default_input_values = [ null ]
+base_type = "Node2D"
+argument_cache = {
+"args": [ {
+"class_name": "Node",
+"hint": 0,
+"hint_string": "",
+"name": "node",
+"type": 17,
+"usage": 7
+}, {
+"class_name": "",
+"hint": 0,
+"hint_string": "",
+"name": "legible_unique_name",
+"type": 1,
+"usage": 7
+} ],
+"default_args": [  ],
+"flags": 1,
+"id": 0,
+"name": "",
+"return": {
+"class_name": "",
+"hint": 0,
+"hint_string": "",
+"name": "",
+"type": 0,
+"usage": 7
+}
+}
+function = "add_child"
+use_default_args = 1
+
+[sub_resource type="VisualScriptVariableGet" id=29]
+var_name = "PlanetSpawningRange"
+
+[sub_resource type="VisualScriptOperator" id=30]
+_default_input_values = [ 0, -1 ]
+operator = 8
+type = 2
+
+[sub_resource type="VisualScript" id=1]
+data = {
+"base_type": "Node2D",
+"functions": [ {
+"data_connections": [ 16, 0, 3, 0, 11, 0, 12, 0, 14, 0, 16, 0, 19, 0, 17, 0, 18, 0, 19, 0, 12, 1, 20, 0, 20, 0, 21, 0, 21, 0, 25, 0, 31, 0, 26, 0, 31, 0, 28, 0, 25, 0, 29, 0, 30, 0, 31, 0, 15, 0, 16, 1, 26, 0, 21, 1, 28, 0, 25, 1, 30, 0, 26, 1, 30, 0, 28, 1 ],
+"function_id": 0,
+"name": "_ready",
+"nodes": [ 0, Vector2( 800, 400 ), SubResource( 2 ), 3, Vector2( 1400, 400 ), SubResource( 5 ), 11, Vector2( 1800, 540 ), SubResource( 13 ), 12, Vector2( 1800, 400 ), SubResource( 14 ), 14, Vector2( 1400, 640 ), SubResource( 16 ), 15, Vector2( 1400, 700 ), SubResource( 17 ), 16, Vector2( 1400, 540 ), SubResource( 18 ), 17, Vector2( 3800, 400 ), SubResource( 19 ), 18, Vector2( 3800, 620 ), SubResource( 20 ), 19, Vector2( 3800, 500 ), SubResource( 21 ), 20, Vector2( 2200, 400 ), SubResource( 22 ), 21, Vector2( 2600, 400 ), SubResource( 23 ), 23, Vector2( 1000, 400 ), SubResource( 24 ), 25, Vector2( 3000, 400 ), SubResource( 25 ), 26, Vector2( 2600, 520 ), SubResource( 26 ), 28, Vector2( 3000, 520 ), SubResource( 27 ), 29, Vector2( 3400, 400 ), SubResource( 28 ), 30, Vector2( 2240, 620 ), SubResource( 29 ), 31, Vector2( 2520, 700 ), SubResource( 30 ) ],
+"scroll": Vector2( -50, -100 ),
+"sequence_connections": [ 23, 0, 3, 3, 0, 12, 29, 0, 17, 12, 0, 20, 20, 0, 21, 0, 0, 23, 21, 0, 25, 25, 0, 29 ]
+}, {
+"data_connections": [  ],
+"function_id": -1,
+"name": "f_312843592",
+"nodes": [  ],
+"scroll": Vector2( 2228.33, 227.876 ),
+"sequence_connections": [  ]
+} ],
+"is_tool_script": false,
+"signals": [  ],
+"variables": [ {
+"default_value": 30000,
+"export": true,
+"hint": 0,
+"hint_string": "",
+"name": "NumberOfPlanets",
+"type": 2,
+"usage": 7
+}, {
+"default_value": 0,
+"export": false,
+"hint": 0,
+"hint_string": "",
+"name": "CurrentNumPlanets",
+"type": 2,
+"usage": 7
+}, {
+"default_value": 100000,
+"export": true,
+"hint": 0,
+"hint_string": "",
+"name": "PlanetSpawningRange",
+"type": 2,
+"usage": 7
+} ],
+"vs_unify": true
+}
+
+[node name="SceneRoot" type="Node2D"]
+
+[node name="PlanetSpawner" type="Node" parent="."]
+script = SubResource( 1 )
+NumberOfPlanets = 10000
+PlanetSpawningRange = 150000
+
+[node name="Spaceship" parent="." instance=ExtResource( 2 )]
+position = Vector2( 67, 39 )
+rotation = 0.805323
+Acceleration = 50.0
+Speed = 200.0
