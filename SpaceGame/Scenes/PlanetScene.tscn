@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Textures/t_Planet_0.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/script_RandomScale.vs" type="Script" id=2]
+[ext_resource path="res://Scripts/script_RandomPlanetSprite.vs" type="Script" id=3]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 724.017
+
+[node name="Planet" type="StaticBody2D"]
+position = Vector2( 523, -651 )
+script = ExtResource( 2 )
+ScaleRange = Vector2( 0.2, 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 2.96296, 2.96296 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
