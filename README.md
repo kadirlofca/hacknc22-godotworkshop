@@ -3,17 +3,17 @@ A videogame where the player rotates a spaceship to avoid collisions. Developed 
 
 
 
-# Setup 
+# 1. Setup 
 
 
-**Setting Up Godot Engine**
+**1a. Setting Up Godot Engine**
 
 Open the <a href="https://github.com/godotengine/godot/releases/tag/3.4.4-stable">Godot v3.4.4 page</a>. Under "Assets", find the folder for your operating system (Windows, MacOS or OSX, Linux, etc). Download the folder and extract it to a location of your choice. In the extracted folder, you will find an executable that will run the engine.
 
 <img src="https://user-images.githubusercontent.com/48933801/188701341-2621ab09-dff0-454c-9819-1000980822aa.jpg" width=35% height=35%>
 
 
-**Downloading The Game Assets**
+**1b. Downloading The Game Assets**
 
 In the <a href="https://github.com/kadirlofca/hacknc22-godotgame">repository page</a> click "Download ZIP" from the dropdown menu under the green "Code" button. This will download the repository with all of its contents inside a zip folder. You can extract the files to a location of your choice. After the workshop, the final game project files will be uploaded to this repository.
 
@@ -21,7 +21,7 @@ In the <a href="https://github.com/kadirlofca/hacknc22-godotgame">repository pag
 
 
 
-# Creating A Fresh Godot Project
+# 2. Creating A Fresh Godot Project
 
 After dowloading Godot Engine, run the executable. The Godot interface will start. Here, you can manage your projects.
 
@@ -37,7 +37,7 @@ A new project will be created and the project window will open up. All coding an
 
 
 
-# Some Notes
+# 3. Some Notes
 
 - The workshop session will be recorded and accessible through this repository page. 
 - The final project (with comments that explain code) will be uploaded to this repository once the workshop is finished.
