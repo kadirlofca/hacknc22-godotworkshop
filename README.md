@@ -3,6 +3,8 @@ A videogame where the player rotates a spaceship to avoid collisions. Developed 
 
 See the <a href="https://docs.google.com/presentation/d/1fq__kvJcgk9I1BZUMpuUEhHgDCf4DUtGHuMsOkdTXXM/edit?usp=sharing">Slides</a> for instructions to complete the template project.
 
+Watch the <a href="https://youtu.be/UaXyEcsbjbI">recorded workshop</a>.
+
 <hr>
 
 # Instructions
