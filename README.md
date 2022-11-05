@@ -1,9 +1,13 @@
 # HackNC 2022 - Game Dev Workshop
-A videogame where the player rotates a spaceship to avoid collisions. Developed by <a href="https://github.com/kadirlofca">Kadir Lofca</a> and <a href="https://github.com/cmbrock">Colin Brockman</a> using Godot Engine and visual scripting as a workshop project for HackNC 2022. 
+A videogame where the player rotates a spaceship to avoid collisions. Developed by <a href="https://github.com/kadirlofca">Kadir Lofca</a> and <a href="https://github.com/cmbrock">Colin Brockman</a> using Godot Engine and visual scripting as a workshop project for HackNC 2022.
 
+See the <a href="https://docs.google.com/presentation/d/1fq__kvJcgk9I1BZUMpuUEhHgDCf4DUtGHuMsOkdTXXM/edit?usp=sharing">Slides</a> for instructions to complete the template project.
 
+<hr>
 
-# 1. Download The Project Repository 
+# Instructions
+
+**1. Download The Project Repository**
 
 In the <a href="https://github.com/kadirlofca/hacknc22-godotgame">repository page</a> click ```Download ZIP``` from the dropdown menu under ```Code```. This will download the repository with all of its contents inside a zip folder. You can extract the files to a location of your choice.
 
@@ -11,7 +15,7 @@ In the <a href="https://github.com/kadirlofca/hacknc22-godotgame">repository pag
 
 
 
-# 2. Open The Project
+**2. Open The Project**
 
 After dowloading the repository, you will find Godot Engine inside "Godot.zip", extract the engine and run the executable. The Godot interface will start. Here, you can manage your projects.
 
@@ -26,14 +30,6 @@ Double click the project to run it!
 <img src="https://user-images.githubusercontent.com/48933801/195952360-abe8b0cb-8a94-493b-909e-cf796c5f7818.png" width=40% height=40%>
 
 
+**3. Project Overview**
 
-# 3. Project Overview
-
-The "WorkshopTemplate" project contains all the textures and assets for the game to run. The scripts responsible for the spaceship and spawning of planets are left empty. Follow us developing these two scripts during the workshop! 
-
-
-
-# 4. Some Notes
-
-- The workshop session will be recorded and accessible through this repository page. 
-- The final project (with comments that explain code) will be uploaded to this repository once the workshop is finished.
+The "WorkshopTemplate" project contains all the textures and assets for the game to run. The scripts responsible for the spaceship and spawning of planets are left empty.
