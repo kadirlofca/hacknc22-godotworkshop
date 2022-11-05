@@ -71,7 +71,9 @@ polygon = PoolVector2Array( -20, -13.3333, 0, -30.6667, 18.6667, -13.3333, 10.66
 
 [node name="Spawner" type="Node2D" parent="."]
 script = ExtResource( 3 )
-targetPlanetCount = 50
+TargetStarNum = 200
+TargetPlanetNum = 5000
+SpawningRange = 50000
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_ignore_camera_zoom = true
